@@ -13,7 +13,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wrapper {
-	background: #E3E3E3;
+  background: #4c6d86;
+  overflow: auto;
 }
 
 .img-circle {
@@ -48,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: none;
 }
 
+
 /*#my-modal {
 	display: none;
 }
@@ -65,9 +67,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /*** thin bar ***/
 
-.thin-bar {
+/* .thin-bar {
 		border-bottom: 5px solid #F33F12;
-}
+} */
 
 /*** Header ***/
 
@@ -116,6 +118,7 @@ nav ul a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
   display: flex;
+  color: #27334d;
 }
 
 .nav-headline {
@@ -132,9 +135,15 @@ nav ul a {
 }
 .main-logo > *:not(:first-child) {
   margin-left: 1vh;
+  /* margin-bottom: 1vh; */
+  margin-top: 1.5vh;
+  color: #27334d;
 }
+
+
 .main-logo img {
   width: 2.2em;
+  margin-bottom: 2vh;
 }
 
 .nav-link {
@@ -218,8 +227,7 @@ body footer {
 		position: fixed;
     top: 0;
     background-color: #fff;
-		
-  }
+     }
 
   .sticky {
     position: fixed;
@@ -240,6 +248,7 @@ body footer {
     align-items: center;
     border-bottom: unset;
     margin: 0;
+    margin-top: 1vh;
   }
 
   nav ul {
@@ -310,7 +319,7 @@ body footer {
 		margin-top: 12em;
 		border: 1px solid #eee;
 		background-color: white;
-		padding-bottom: 1em;
+		padding-bottom: 4em;
 }
 
 #about img {
@@ -366,7 +375,6 @@ body footer {
 .fa {
 	font-size: 1.2em;
 	padding: 0.1em 0.4em;
-	color: #8a8a8a;
 }
 
 .fa:hover {
@@ -431,6 +439,7 @@ body footer {
 
 #work .work-row {
 	margin-bottom: 5.5em;
+ 
 }
 
 .details h3 {
@@ -475,6 +484,7 @@ body footer {
 /*** teaching ***/
 #teaching {
 	padding: 6em 4em 3em;
+  background-color: #fff;
 }
 
 #teaching h2 {
@@ -492,7 +502,71 @@ body footer {
 	margin-top: -4em;
 }
 
+.devicon {
+  font-size: 4em;
+}
 
+#skills {
+  grid-column: 1 / span 3;
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  justify-self: center;
+  border-radius: 10px;
+  padding: 3vh;
+}
+
+.skill {
+  color: #27334d;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid rgba(46,46,46,.1);
+  border-radius: 10px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+
+.skill-row {
+  justify-content: center;
+}
+.skill, .skill-row {
+  display: flex;
+  align-items: center;
+}
+.skill-img-container {
+  display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    margin-top: 3vh;
+}
+
+.skill-headline {
+  font-weight: 500;
+}
+
+.skill-icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.skill-icon-row {
+  display: flex;
+  flex-direction: row;
+}
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2rem;
+  width: 5.2rem;
+  white-space: nowrap;
+  overflow: initial;
+  font-size: 14px;
+  font-weight: 600;
+}
 
 
 
@@ -549,6 +623,7 @@ body footer {
 
 #footer {
 	padding: 5em 4em 2em;
+  background-color: #fff;
 }
 
 #footer #logo {

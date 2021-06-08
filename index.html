@@ -22,6 +22,8 @@
 	<link rel="stylesheet" href="assets/fonts/foundation-icons/foundation-icons.css">
 	<link rel="stylesheet" href="assets/styles/styles.css">
 	<link rel="stylesheet" href="assets/styles/nav.scss">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+
 </head>
 
 <body>
@@ -29,13 +31,15 @@
 
 
 		<header>
-      <div id="nav-bar" class="nav-bar-container">
-        <div class="nav-headline">
-          <a class="main-logo" href="#home">
-            <img src="assets/images/tashi-logo.jpg" alt="website logo"  height="40" width="40">
-            <p>Tashi Tsering</p>
-          </a>
-        </div>
+
+				<div id="nav-bar" class="nav-bar-container">
+					<div class="nav-headline">
+						<a class="main-logo" href="#home">
+						  <img class="img-circle" src="assets/images/tashi-logo.png"  alt="website logo">
+							<p>Tashi Tsering</p>
+						</a>
+					</div>
+	
 
         <label class="nav-toggle-label" for="nav-toggle">
           <span></span>
@@ -46,20 +50,21 @@
         <nav class="nav-bar">
           <ul class="nav-ul">
             <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#experience">Skills</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
             <li><a class="nav-link" href="#work">Projects</a></li>
             <li><a class="nav-link" href="#footer">Social Media</a></li>
           </ul>
         </nav>
 			</div>
 			</header>
+			
 			<div class="wrapper">
 				<div class="thin-bar">
 				</div>
 		<section id="about">
 			<div class="row">
 				<div class="small-12 large-8 large-offset-2 columns text-center">
-					<img class="img-circle" src="assets/images/profile.jpg" alt="headshot">
+					<img class="img-circle" src="assets/images/tashi-img.png" alt="headshot">
 					<div class="details">
 						<h2>Hi, I'm Tashi. I...<br> <span id="writing-text"><span></h2>
 					</div>
@@ -68,20 +73,147 @@
 			<div class="row">
 				<div class="small-12 column">
 					<div class="cta text-center">
-						<a class="my-button cta-button expand form-button" href="mailto:tashi.tsering619@gmail.com">Get In Touch</a>
-					</div>
+						<a class="my-button cta-button expand form-button" href="mailto:tashi.tsering619@gmail.com">
+							<i class="fa fa-envelope" ></i>
+							Get In Touch</a>
+			</div>
 				</div>
-				<div class="small-12 column">
-					<div class="my-arrow-div text-center">
-						<a href="https://github.com/TashiTee"><i class="fa fa-github-alt fa-2x"></i></a>
+			</div>
+		</section>
+		<section id="skills" class="section-container skill-container">
+			<div class="skill">
+				<div class="skill-row skill-img-container">
+					<i class="icon skill-img" data-feather="code"></i>
+					<span class="skill-headline">Languages</span>
+				</div>
+
+				<div class="skill-icon-container skill-row">
+					<div class="skill-icon">
+						<i class="devicon-javascript-plain colored devicon"></i>
+						<span>JavaScript</span>
+					</div>
+					
+					<div class="skill-icon">
+						<i class="devicon-html5-plain colored devicon"></i>
+						<span>HTML5</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-css3-plain colored devicon"></i>
+						<span>CSS3</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-sass-plain colored devicon"></i>
+						<span>Saas</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-typescript-plain colored devicon"></i>
+						<span>TypeScript</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-java-plain colored devicon"></i>
+						<span>Java</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-c-plain colored devicon"></i>
+						<span>C</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-cplusplus-plain colored devicon"></i>
+						<span>C++</span>
 					</div>
 
 				</div>
 			</div>
 
-		</section>
+			<div class="skill">
+				<div class="skill-img-container skill-row">
+					<i class="icon skill-img" data-feather="book-open"></i>
+					<span class="skill-headline">Libraries & Frameworks</span>
+				</div>
 
-		<section id="experience">
+				<div class="skill-icon-container skill-row">
+					<div class="skill-icon">
+						<i class="devicon-angularjs-plain colored devicon"></i>
+						<span>Angular</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-react-plain colored devicon"></i>
+						<span>React</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-nodejs-plain colored devicon"></i>
+						<span>Node.js</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-bootstrap-plain colored devicon"></i>
+						<span>Bootstrap</span>
+					</div>
+					<div class="skill-icon">
+					<i class="devicon-jquery-plain colored devicon"></i>
+					<span>jQuery</span>
+					</div>	
+				</div>
+			</div>
+
+			<div class="skill">
+				<div class="skill-img-container skill-row">
+					<i class="icon skill-img" data-feather="package"></i>
+					<span class="skill-headline">Database & Tools</span>
+				</div>
+
+				<div class="skill-icon-container skill-row">
+					<div class="skill-icon">
+						<i class="devicon-postgresql-plain colored devicon"></i>
+						<span>PostgreSQL</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-mongodb-plain colored devicon"></i>
+						<span>MongoDB</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-oracle-plain colored devicon"></i>
+						<span>Oracle</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-microsoftsqlserver-plain colored devicon"></i>
+						<span>Sql Server</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-git-plain colored devicon"></i>
+						<span>Git</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-github-plain colored devicon"></i>
+						<span>GitHub</span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-visualstudio-plain colored devicon"></i>
+						<span>Visual Studio </span>
+					</div>
+
+					<div class="skill-icon">
+						<i class="devicon-xd-plain colored devicon"></i>
+						<span>Adobe Xd</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- <section id="experience">
 
 			<div class="row column">
 				<div class="small-12">
@@ -94,8 +226,8 @@
 					<i class="fi-laptop"></i>
 					<h3>Front-end</h3>
 					<ul>
-						<li>HTML(5)</li>
-						<li>CSS(3)</li>
+						<li>HTML5</li>
+						<li>CSS3</li>
 						<li>JavaScript</li>
 						<li>jQuery</li>
 						<li>Handlebars</li>
@@ -132,13 +264,13 @@
 				</div>
 			</div>
 
-		</section>
+		</section> -->
 
 		<section id="work">
 			<h2 class="text-center">Projects</h2>
-			<div class="row">
+			<!-- <div class="row">
 				<p class="text-center tag-line">Here are some of my personal projects.</p>
-			</div>
+			</div> -->
 			
 			<div class="row work-row">
 				<div class="small-12 medium-6 medium-push-6 columns">

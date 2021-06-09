@@ -2,61 +2,61 @@ function makeWords() {
 
 	var words = [
 		{
-			text: "html5",
+			text: "HTML5",
 			weight: 12.3
 		}, {
-			text: "css3",
+			text: "CSS3",
 			weight: 12.5
 		}, {
-			text: "javascript",
+			text: "JavaScript",
 			weight: 13
 		}, {
-			text: "jquery",
-			weight: 12
+			text: "Sass",
+			weight: 11
 		}, {
-			text: "programming",
+			text: "Angular",
 			weight: 10
 		}, {
-			text: "python",
+			text: "React",
 			weight: 10
 		}, {
-			text: "java",
+			text: "Vue",
 			weight: 9
 		}, {
 			text: "nodejs",
 			weight: 11
 		}, {
-			text: "npm",
+			text: "Java",
 			weight: 9
 		}, {
-			text: "web development",
-			weight: 10
-		}, {
-			text: "C",
-			weight: 8.3
-		}, {
-			text: "Scheme",
-			weight: 8.1
-		}, {
-			text: "php",
-			weight: 7.8
-		}, {
-			text: "hadoop",
-			weight: 8.5
-		}, {
-			text: "numpy",
-			weight: 7
-		}, {
-			text: "matplotlib",
-			weight: 7
-		}, {
-			text: "ruby",
+			text: "C#",
 			weight: 8
 		}, {
-			text: "express",
+			text: "Python",
+			weight: 8.3
+		}, {
+			text: "jQuery",
+			weight: 8.1
+		}, {
+			text: "UI/UX",
 			weight: 9
 		}, {
-			text: "flask",
+			text: "MongoDB",
+			weight: 8.5
+		}, {
+			text: "Oracle",
+			weight: 9
+		}, {
+			text: "SQL",
+			weight: 9
+		}, {
+			text: "TypeScript",
+			weight: 8
+		}, {
+			text: "Express",
+			weight: 9
+		}, {
+			text: "Front-End",
 			weight: 8.9
 		}, {
 			text: "responsive design",
@@ -64,7 +64,7 @@ function makeWords() {
 		}, {
 			text: "bootstrap",
 			weight: 10
-		}
+		},
 		/* ... */
 	];
 	return words;

@@ -14,8 +14,8 @@
 	<script src="bower_components/typed.js/dist/typed.min.js" charset="utf-8"></script>
 	<script src="bower_components/jqcloud2/dist/jqcloud.min.js" charset="utf-8"></script>
 	<link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
-	<script src="bower_components/custombox/dist/custombox.min.js"></script>
-	<link href="bower_components/custombox/dist/custombox.min.css" rel="stylesheet">
+	<!-- <script src="bower_components/custombox/dist/custombox.min.js"></script>
+	<link href="bower_components/custombox/dist/custombox.min.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500" rel="stylesheet">
@@ -23,45 +23,43 @@
 	<link rel="stylesheet" href="assets/styles/styles.css">
 	<link rel="stylesheet" href="assets/styles/nav.scss">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+	<script src="https://unpkg.com/feather-icons"></script>
+
 
 </head>
 
 <body>
 
-
-
+	<div class="container" id="home">
 		<header>
-
-				<div id="nav-bar" class="nav-bar-container">
-					<div class="nav-headline">
-						<a class="main-logo" href="#home">
-						  <img class="img-circle" src="assets/images/tashi-logo.png"  alt="website logo">
-							<p>Tashi Tsering</p>
-						</a>
-					</div>
-	
-
-        <label class="nav-toggle-label" for="nav-toggle">
-          <span></span>
-        </label>
-
-        <input id="nav-toggle" type="checkbox" />
-
-        <nav class="nav-bar">
-          <ul class="nav-ul">
-            <li><a class="nav-link" href="#about">About</a></li>
-            <li><a class="nav-link" href="#skills">Skills</a></li>
-            <li><a class="nav-link" href="#work">Projects</a></li>
-            <li><a class="nav-link" href="#footer">Social Media</a></li>
-          </ul>
-        </nav>
-			</div>
-			</header>
-			
-			<div class="wrapper">
-				<div class="thin-bar">
+			<div id="nav-bar" class="nav-bar-container">
+				<div class="nav-headline">
+					<a class="main-logo" href="#aboutt">
+						<img class="img-circle" src="assets/images/tashi-logo.png" alt="website logo">
+						<p>Tashi Tsering</p>
+					</a>
 				</div>
+
+				<label class="nav-toggle-label" for="nav-toggle">
+					<span></span>
+				</label>
+
+				<input id="nav-toggle" type="checkbox" />
+
+				<nav class="nav-bar">
+					<ul class="nav-ul">
+						<li><a class="nav-link" href="#aboutt">About</a></li>
+						<li><a class="nav-link" href="#skillss">Skills</a></li>
+						<li><a class="nav-link" href="#work">Projects</a></li>
+						<li><a class="nav-link" href="#footerr">Social Media</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<a class="anchor" id="aboutt"></a>
+
 		<section id="about">
+			<a class="anchor" id="top"></a>
 			<div class="row">
 				<div class="small-12 large-8 large-offset-2 columns text-center">
 					<img class="img-circle" src="assets/images/tashi-img.png" alt="headshot">
@@ -74,204 +72,175 @@
 				<div class="small-12 column">
 					<div class="cta text-center">
 						<a class="my-button cta-button expand form-button" href="mailto:tashi.tsering619@gmail.com">
-							<i class="fa fa-envelope" ></i>
+							<i class="fa fa-envelope"></i>
 							Get In Touch</a>
-			</div>
-				</div>
-			</div>
-		</section>
-		<section id="skills" class="section-container skill-container">
-			<div class="skill">
-				<div class="skill-row skill-img-container">
-					<i class="icon skill-img" data-feather="code"></i>
-					<span class="skill-headline">Languages</span>
-				</div>
-
-				<div class="skill-icon-container skill-row">
-					<div class="skill-icon">
-						<i class="devicon-javascript-plain colored devicon"></i>
-						<span>JavaScript</span>
-					</div>
-					
-					<div class="skill-icon">
-						<i class="devicon-html5-plain colored devicon"></i>
-						<span>HTML5</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-css3-plain colored devicon"></i>
-						<span>CSS3</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-sass-plain colored devicon"></i>
-						<span>Saas</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-typescript-plain colored devicon"></i>
-						<span>TypeScript</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-java-plain colored devicon"></i>
-						<span>Java</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-c-plain colored devicon"></i>
-						<span>C</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-cplusplus-plain colored devicon"></i>
-						<span>C++</span>
-					</div>
-
-				</div>
-			</div>
-
-			<div class="skill">
-				<div class="skill-img-container skill-row">
-					<i class="icon skill-img" data-feather="book-open"></i>
-					<span class="skill-headline">Libraries & Frameworks</span>
-				</div>
-
-				<div class="skill-icon-container skill-row">
-					<div class="skill-icon">
-						<i class="devicon-angularjs-plain colored devicon"></i>
-						<span>Angular</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-react-plain colored devicon"></i>
-						<span>React</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-nodejs-plain colored devicon"></i>
-						<span>Node.js</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-bootstrap-plain colored devicon"></i>
-						<span>Bootstrap</span>
-					</div>
-					<div class="skill-icon">
-					<i class="devicon-jquery-plain colored devicon"></i>
-					<span>jQuery</span>
-					</div>	
-				</div>
-			</div>
-
-			<div class="skill">
-				<div class="skill-img-container skill-row">
-					<i class="icon skill-img" data-feather="package"></i>
-					<span class="skill-headline">Database & Tools</span>
-				</div>
-
-				<div class="skill-icon-container skill-row">
-					<div class="skill-icon">
-						<i class="devicon-postgresql-plain colored devicon"></i>
-						<span>PostgreSQL</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-mongodb-plain colored devicon"></i>
-						<span>MongoDB</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-oracle-plain colored devicon"></i>
-						<span>Oracle</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-microsoftsqlserver-plain colored devicon"></i>
-						<span>Sql Server</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-git-plain colored devicon"></i>
-						<span>Git</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-github-plain colored devicon"></i>
-						<span>GitHub</span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-visualstudio-plain colored devicon"></i>
-						<span>Visual Studio </span>
-					</div>
-
-					<div class="skill-icon">
-						<i class="devicon-xd-plain colored devicon"></i>
-						<span>Adobe Xd</span>
 					</div>
 				</div>
 			</div>
 		</section>
-		<!-- <section id="experience">
+		<a class="anchor" id="skillss"></a>
+		<section id="skills" class="section-container skill-container skill-color">
+			<div class="skill-row icon-skill">
+				<h2 class="text-center">Skills</h2>
+				<i class="icon skill-img" data-feather="settings"></i>
+				<script>
+					feather.replace()
+				</script>
+			</div>
+			<div class="contains-skills">
+				<div class="skill">
+					<div class="skill-row skill-img-container">
+						<i class="icon skill-img" data-feather="code"></i>
+						<script>
+							feather.replace()
+						</script>
 
-			<div class="row column">
-				<div class="small-12">
-					<h2 class="text-center">My Experience</h2>
-					<p class="text-center tag-line">Specialist in need. Generalist at heart.</p>
+						<span class="skill-headline">Languages</span>
+					</div>
+
+					<div class="skill-icon-container skill-row">
+						<div class="skill-icon">
+							<i class="devicon-javascript-plain colored devicon"></i>
+							<span>JavaScript</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-html5-plain colored devicon"></i>
+							<span>HTML5</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-css3-plain colored devicon"></i>
+							<span>CSS3</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-sass-plain colored devicon"></i>
+							<span>Saas</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-typescript-plain colored devicon"></i>
+							<span>TypeScript</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-java-plain colored devicon"></i>
+							<span>Java</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-c-plain colored devicon"></i>
+							<span>C</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-cplusplus-plain colored devicon"></i>
+							<span>C++</span>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="skill-img-container skill-row">
+						<i class="icon skill-img" data-feather="book-open"></i>
+						<script>
+							feather.replace()
+						</script>
+						<span class="skill-headline">Libraries & Frameworks</span>
+					</div>
+
+					<div class="skill-icon-container skill-row">
+						<div class="skill-icon">
+							<i class="devicon-angularjs-plain colored devicon"></i>
+							<span>Angular</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-react-plain colored devicon"></i>
+							<span>React</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-nodejs-plain colored devicon"></i>
+							<span>Node.js</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-bootstrap-plain colored devicon"></i>
+							<span>Bootstrap</span>
+						</div>
+						<div class="skill-icon">
+							<i class="devicon-jquery-plain colored devicon"></i>
+							<span>jQuery</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="skill">
+					<div class="skill-img-container skill-row">
+						<i class="icon skill-img" data-feather="package"></i>
+						<script>
+							feather.replace()
+						</script>
+						<span class="skill-headline">Database & Tools</span>
+					</div>
+
+					<div class="skill-icon-container skill-row">
+						<div class="skill-icon">
+							<i class="devicon-postgresql-plain colored devicon"></i>
+							<span>PostgreSQL</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-mongodb-plain colored devicon"></i>
+							<span>MongoDB</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-oracle-plain colored devicon"></i>
+							<span>Oracle</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-microsoftsqlserver-plain colored devicon"></i>
+							<span>Sql Server</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-git-plain colored devicon"></i>
+							<span>Git</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-github-plain colored devicon"></i>
+							<span>GitHub</span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-visualstudio-plain colored devicon"></i>
+							<span>Visual Studio </span>
+						</div>
+
+						<div class="skill-icon">
+							<i class="devicon-xd-plain colored devicon"></i>
+							<span>Adobe Xd</span>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-laptop"></i>
-					<h3>Front-end</h3>
-					<ul>
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>JavaScript</li>
-						<li>jQuery</li>
-						<li>Handlebars</li>
-						<li>Bootstrap</li>
-						<li>DOM</li>
-						<li>Ajax</li>
-					</ul>
-				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-database"></i>
-					<h3>Back-end</h3>
-					<ul>
-						<li>NodeJS</li>
-						<li>NPM</li>
-						<li>Express</li>
-						<li>SQL</li>
-						<li>Mongo</li>
-						<li>PostgreSQL</li>
-						<li>Authentication</li>
-					</ul>
-				</div>
-				<div class="small-12 medium-4 columns text-center experience-topics">
-					<i class="fi-star"></i>
-					<h3>Tools</h3>
-					<ul>
-						<li>Visual Studio</li>
-						<li>Visual Studio Code</li>
-						<li>Oracle Database</li>
-						<li>Git && GitHub</li>
-						<li>SSH</li>
-						<li>Adobe XD</li>
-						<li>Adobe Photoshop</li>
-					</ul>
-				</div>
-			</div>
 
-		</section> -->
+		</section>
 
 		<section id="work">
-			<h2 class="text-center">Projects</h2>
-			<!-- <div class="row">
-				<p class="text-center tag-line">Here are some of my personal projects.</p>
-			</div> -->
-			
+			<div class="work-img-container skill-row">
+
+				<h2 class="text-center">Projects</h2> <i class="icon skill-img" data-feather="clipboard"></i>
+				<script>
+					feather.replace()
+				</script>
+			</div>
 			<div class="row work-row">
 				<div class="small-12 medium-6 medium-push-6 columns">
 					<img src="assets/images/seneca-iap.jpg" alt="">
@@ -281,51 +250,130 @@
 						<h3>Seneca International Agent and Admin Portal</h3>
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Allows </p>
-						<a class="my-button" target="_blank" href="#">Visit Website</a>
+						<p>Built the front-end web pages for an admin and agent portal system that would be used by 425 agencies
+							around the world. </p>
+						<a class="my-button" target="_blank"
+							href="https://www.senecacollege.ca/international/agency-information/registered-seneca-agent.html">
+							<e class="fa fa-globe"></e>
+							Visit Website
+						</a>
 					</div>
 				</div>
 			</div>
+
 			<div class="row work-row">
 				<div class="small-12 medium-6 columns">
-					<img src="assets/images/hangman.jpg" alt="">
+					<div>
+						<a href="https://tashitee.github.io/weather-app/" class="block-20"
+							style="background-image: url('assets/images/weather.gif');">
+						</a>
+					</div>
 				</div>
 				<div class="small-12 medium-5 medium-offset-1 columns">
 					<div class="details details-ftm">
-						<h3>Hangman</h3>
+						<h3>Multi-day Weather Web Application</h3>
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Fun and interactive hangman game.</p>
-						<a class="my-button" target="_blank" href="https://tashitee.github.io/Hangman-Game/">Visit Website</a>
+						<p>Weather Web Application that shows the forecast of a city.</p>
+
+						<a class="my-button cta-button expand form-button" target="_blank"
+							href="https://tashitee.github.io/weather-app">
+							<e class="fa fa-eye"></e>
+							&nbsp;&nbsp;
+							Demo
+						</a>
+						&nbsp;&nbsp;
+						<a class="my-button" target="_blank" href="https://github.com/TashiTee/weather-app">
+							<e class="fa fa-code"></e>
+							Code
+						</a>
 					</div>
+
 				</div>
 			</div>
+
 			<div class="row work-row">
 				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/spotify.jpg" alt="">
+					<div>
+						<a href="https://tashitee.github.io/Hangman-Game/" class="block-21"
+							style="background-image: url('assets/images/hangman.gif');">
+						</a>
+					</div>
 				</div>
 				<div class="small-12 medium-5 medium-pull-7 columns">
 					<div class="details details-ftm">
-						<h3>Spotify</h3>
+						<h3>Hangman Game</h3>
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Spotify replica.</p>
-						<a class="my-button" target="_blank" href="https://tashitee.github.io/music-player/">Visit Website</a>
+						<p>A fun and super dynamic Hangman game that uses Canvas API to draw the graphics.</p>
+						<a class="my-button cta-button expand form-button" target="_blank"
+							href="https://tashitee.github.io/Hangman-Game">
+							<e class="fa fa-eye"></e>
+							&nbsp;&nbsp;
+							Demo
+						</a>
+						&nbsp;&nbsp;
+						<a class="my-button" target="_blank" href="https://github.com/TashiTee/Hangman-Game">
+							<e class="fa fa-code"></e>
+							Code
+						</a>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="row work-row">
 				<div class="small-12 medium-6 columns">
-					<img src="assets/images/quiz.jpg" alt="">
+					<div>
+						<a href="https://tashitee.github.io/quiz-app/" class="block-21"
+							style="background-image: url('assets/images/quiz.gif');">
+						</a>
+					</div>
 				</div>
 				<div class="small-12 medium-5 medium-offset-1 columns">
 					<div class="details details-ftm">
 						<h3>Quiz Application</h3>
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>An OOP Quiz Application Built With Vanilla JavaScript</p>
-						<a class="my-button" target="_blank" href="https://tashitee.github.io/quiz-app/">Visit Website</a>
+						<p>An Object-Oriented Quiz Quiz Application Built With Vanilla JavaScript</p>
+						<a class="my-button cta-button expand form-button" target="_blank"
+							href="https://tashitee.github.io/quiz-app">
+							<e class="fa fa-eye"></e>
+							&nbsp;&nbsp;
+							Demo
+						</a>
+						&nbsp;&nbsp;
+						<a class="my-button" target="_blank" href="https://github.com/TashiTee/quiz-app">
+							<e class="fa fa-code"></e>
+							Code
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="row work-row">
+				<div class="small-12 medium-6 medium-push-6 columns">
+					<a href="https://tashitee.github.io/Spotify/" class="spotify-gif"
+						style="background-image: url('assets/images/spotify.gif');">
+					</a>
+				</div>
+				<div class="small-12 medium-5 medium-pull-7 columns">
+					<div class="details details-ftm">
+						<h3>Spotify Music Player</h3>
+						<p class="platform">Web</p>
+						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
+						<p>Listen to any music in the playlist with a built in tracker to track the music that is currently being
+							played </p>
+						<a class="my-button cta-button expand form-button" target="_blank"
+							href="https://tashitee.github.io/spotify-app">
+							<e class="fa fa-eye"></e>
+							&nbsp;&nbsp;
+							Demo
+						</a>
+						&nbsp;&nbsp;
+						<a class="my-button" target="_blank" href="https://github.com/TashiTee/spotify-app">
+							<e class="fa fa-code"></e>
+							Code
+						</a>
 					</div>
 				</div>
 			</div>
@@ -347,30 +395,50 @@
 			</div>
 		</section>
 
-		<section id="footer-cta">
-			<h2 class="text-center">Wanna work with me?</h2>
-			<p></p>
-			<div class="row text-center">
-				<div class="small-12 medium-8 medium-offset-2 columns">
-					<p class="text-center">I'm currently available for work.</p>
-				</div>
-				<div class="small-12 columns" id="startButtonDiv">
-					<a class="my-button form-button" href="#">Start Now</a>
-				</div>
-			</div>
-		</section>
+
+		<a class="anchor" id="footerr"></a>
 
 		<footer id="footer">
-			<div class="row text-center">
-				<div class="small-12 medium-6 medium-offset-3 columns">
-					<p id="logo">TT</p>
-					<p id="copyright">Copyright &copy; 2020 | Tashi Tsering</p>
-				</div>
+			<div class="footer-text">
+				<h2>Contact</h2>
+				<h6>Feel free to send me a message, I'll try to respond as quick as I can!
+				</h6>
+			</div>
+
+			<div class="social-media">
+				<a class="button is-primary is-round is-filled is-medium" href="https://www.linkedin.com/in/tashi-tee"
+					rel="noopener" target="_blank" aria-label="LinkedIn">
+					<i class="icon" data-feather="linkedin"></i>
+					<script>
+						feather.replace()
+					</script>
+				</a>
+				<a class="button is-primary is-round is-filled is-medium" href="https://github.com/TashiTee" rel="noopener"
+					target="_blank" aria-label="Github">
+					<i class="icon" data-feather="github"></i>
+					<script>
+						feather.replace()
+					</script>
+				</a>
+				<a class="button is-primary is-round is-filled is-medium" href="mailto:tashi.tsering619@gmail.com"
+					rel="noopener" target="_blank" aria-label="Email">
+					<i class="icon" data-feather="mail"></i>
+					<script>
+						feather.replace()
+					</script>
+				</a>
+
+			</div>
+
+			<div class="footer-text">
+				<h6>
+					Made With Passion &copy; 2021 Tashi Tsering
+				</h6>
 			</div>
 		</footer>
 
+		<script src="assets/scripts/app.js" charset="utf-8"></script>
 	</div>
-	<script src="assets/scripts/app.js" charset="utf-8"></script>
 </body>
 
 </html>

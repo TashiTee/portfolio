@@ -25,16 +25,15 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 	<script src="https://unpkg.com/feather-icons"></script>
 
-
 </head>
 
-<body>
+<body id="aboutt">
 
-	<div class="container" id="home">
+	<div class="container">
 		<header>
 			<div id="nav-bar" class="nav-bar-container">
 				<div class="nav-headline">
-					<a class="main-logo" href="#aboutt">
+					<a class="main-logo" href="#home">
 						<img class="img-circle" src="assets/images/tashi-logo.png" alt="website logo">
 						<p>Tashi Tsering</p>
 					</a>
@@ -48,16 +47,15 @@
 
 				<nav class="nav-bar">
 					<ul class="nav-ul">
-						<li><a class="nav-link" href="#aboutt">About</a></li>
-						<li><a class="nav-link" href="#skillss">Skills</a></li>
-						<li><a class="nav-link" href="#work">Projects</a></li>
-						<li><a class="nav-link" href="#footerr">Social Media</a></li>
+						<li><a class="nav-link" href="#home">About</a></li>
+						<li><a class="nav-link" href="#skills">Skills</a></li>
+						<li><a class="nav-link" href="#project">Projects</a></li>
+						<li><a class="nav-link" href="#footer">Contact</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
-		<a class="anchor" id="aboutt"></a>
-
+		<a class="anchor" id="home"></a>
 		<section id="about">
 			<a class="anchor" id="top"></a>
 			<div class="row">
@@ -78,22 +76,18 @@
 				</div>
 			</div>
 		</section>
-		<a class="anchor" id="skillss"></a>
+		<a class="anchor-skill" id="skills"></a>
 		<section id="skills" class="section-container skill-container skill-color">
 			<div class="skill-row icon-skill">
 				<h2 class="text-center">Skills</h2>
 				<i class="icon skill-img" data-feather="settings"></i>
-				<script>
-					feather.replace()
-				</script>
+
 			</div>
 			<div class="contains-skills">
 				<div class="skill">
 					<div class="skill-row skill-img-container">
 						<i class="icon skill-img" data-feather="code"></i>
-						<script>
-							feather.replace()
-						</script>
+
 
 						<span class="skill-headline">Languages</span>
 					</div>
@@ -145,9 +139,7 @@
 				<div class="skill">
 					<div class="skill-img-container skill-row">
 						<i class="icon skill-img" data-feather="book-open"></i>
-						<script>
-							feather.replace()
-						</script>
+
 						<span class="skill-headline">Libraries & Frameworks</span>
 					</div>
 
@@ -181,9 +173,7 @@
 				<div class="skill">
 					<div class="skill-img-container skill-row">
 						<i class="icon skill-img" data-feather="package"></i>
-						<script>
-							feather.replace()
-						</script>
+
 						<span class="skill-headline">Database & Tools</span>
 					</div>
 
@@ -233,21 +223,30 @@
 
 		</section>
 
-		<section id="work">
-			<div class="work-img-container skill-row">
+
+		<a class="anchor-project" id="project"></a>
+
+		<section id="project">
+			<div class="project-img-container skill-row">
 
 				<h2 class="text-center">Projects</h2> <i class="icon skill-img" data-feather="clipboard"></i>
-				<script>
-					feather.replace()
-				</script>
+
 			</div>
-			<div class="row work-row">
+			<div class="row project-row">
 				<div class="small-12 medium-6 medium-push-6 columns">
-					<img src="assets/images/seneca-iap.jpg" alt="">
+					<img class="mySlides" src="assets/images/seneca.jpg" alt="">
+					<img class="mySlides" src="assets/images/seneca-1.jpg" alt="">
+					<img class="mySlides" src="assets/images/seneca-2.jpg" alt="">
+					<img class="mySlides" src="assets/images/seneca-3.jpg" alt="">
+					<img class="mySlides" src="assets/images/seneca-4.jpg" alt="">
+					<img class="mySlides" src="assets/images/seneca-5.jpg" alt="">
+					<img class="mySlides" src="assets/images/seneca-6.jpg" alt="">
+					<img class="mySlides" src="assets/images/seneca-7.jpg" alt="">
+					<img class="mySlides" src="assets/images/seneca-8.jpg" alt="">
 				</div>
 				<div class="small-12 medium-5 medium-pull-7 columns">
 					<div class="details details-ftm">
-						<h3>Seneca International Agent and Admin Portal</h3>
+						<h3>Seneca International Admin and Agent Portal</h3>
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
 						<p>Built the front-end web pages for an admin and agent portal system that would be used by 425 agencies
@@ -261,7 +260,7 @@
 				</div>
 			</div>
 
-			<div class="row work-row">
+			<div class="row project-row">
 				<div class="small-12 medium-6 columns">
 					<div>
 						<a href="https://tashitee.github.io/weather-app/" class="block-20"
@@ -274,25 +273,27 @@
 						<h3>Multi-day Weather Web Application</h3>
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>Weather Web Application that shows the forecast of a city.</p>
-
-						<a class="my-button cta-button expand form-button" target="_blank"
-							href="https://tashitee.github.io/weather-app">
-							<e class="fa fa-eye"></e>
+						<p>Weather Web Application that displays the current forecast and a multi-day forecast of a city searched by
+							the user.</p>
+						<div class="project-button"> <a class="my-button cta-button expand form-button" target="_blank"
+								href="https://tashitee.github.io/weather-app">
+								<e class="fa fa-eye"></e>
+								&nbsp;&nbsp;
+								Demo
+							</a>
 							&nbsp;&nbsp;
-							Demo
-						</a>
-						&nbsp;&nbsp;
-						<a class="my-button" target="_blank" href="https://github.com/TashiTee/weather-app">
-							<e class="fa fa-code"></e>
-							Code
-						</a>
+							<a class="my-button" target="_blank" href="https://github.com/TashiTee/weather-app">
+								<e class="fa fa-code"></e>
+								Code
+							</a>
+						</div>
+
 					</div>
 
 				</div>
 			</div>
 
-			<div class="row work-row">
+			<div class="row project-row">
 				<div class="small-12 medium-6 medium-push-6 columns">
 					<div>
 						<a href="https://tashitee.github.io/Hangman-Game/" class="block-21"
@@ -306,22 +307,23 @@
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
 						<p>A fun and super dynamic Hangman game that uses Canvas API to draw the graphics.</p>
-						<a class="my-button cta-button expand form-button" target="_blank"
-							href="https://tashitee.github.io/Hangman-Game">
-							<e class="fa fa-eye"></e>
+						<div class="project-button"> <a class="my-button cta-button expand form-button" target="_blank"
+								href="https://tashitee.github.io/Hangman-Game">
+								<e class="fa fa-eye"></e>
+								&nbsp;&nbsp;
+								Demo
+							</a>
 							&nbsp;&nbsp;
-							Demo
-						</a>
-						&nbsp;&nbsp;
-						<a class="my-button" target="_blank" href="https://github.com/TashiTee/Hangman-Game">
-							<e class="fa fa-code"></e>
-							Code
-						</a>
+							<a class="my-button" target="_blank" href="https://github.com/TashiTee/Hangman-Game">
+								<e class="fa fa-code"></e>
+								Code
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row work-row">
+			<div class="row project-row">
 				<div class="small-12 medium-6 columns">
 					<div>
 						<a href="https://tashitee.github.io/quiz-app/" class="block-21"
@@ -334,23 +336,25 @@
 						<h3>Quiz Application</h3>
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
-						<p>An Object-Oriented Quiz Quiz Application Built With Vanilla JavaScript</p>
-						<a class="my-button cta-button expand form-button" target="_blank"
-							href="https://tashitee.github.io/quiz-app">
-							<e class="fa fa-eye"></e>
+						<p>An Object-Oriented Quiz Quiz Application Built With Vanilla JavaScript.</p>
+						<div class="project-button">
+							<a class="my-button cta-button expand form-button" target="_blank"
+								href="https://tashitee.github.io/quiz-app">
+								<e class="fa fa-eye"></e>
+								&nbsp;&nbsp;
+								Demo
+							</a>
 							&nbsp;&nbsp;
-							Demo
-						</a>
-						&nbsp;&nbsp;
-						<a class="my-button" target="_blank" href="https://github.com/TashiTee/quiz-app">
-							<e class="fa fa-code"></e>
-							Code
-						</a>
+							<a class="my-button" target="_blank" href="https://github.com/TashiTee/quiz-app">
+								<e class="fa fa-code"></e>
+								Code
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row work-row">
+			<div class="row project-row">
 				<div class="small-12 medium-6 medium-push-6 columns">
 					<a href="https://tashitee.github.io/Spotify/" class="spotify-gif"
 						style="background-image: url('assets/images/spotify.gif');">
@@ -362,20 +366,24 @@
 						<p class="platform">Web</p>
 						<p class="icons"><i class="fi-monitor"></i><i class="fi-tablet-portrait"></i><i class="fi-mobile"></i></p>
 						<p>Listen to any music in the playlist with a built in tracker to track the music that is currently being
-							played </p>
-						<a class="my-button cta-button expand form-button" target="_blank"
-							href="https://tashitee.github.io/spotify-app">
-							<e class="fa fa-eye"></e>
+							played.</p>
+						<div class="project-button">
+							<a class="my-button cta-button expand form-button" target="_blank"
+								href="https://tashitee.github.io/spotify-app">
+								<e class="fa fa-eye"></e>
+								&nbsp;&nbsp;
+								Demo
+							</a>
 							&nbsp;&nbsp;
-							Demo
-						</a>
-						&nbsp;&nbsp;
-						<a class="my-button" target="_blank" href="https://github.com/TashiTee/spotify-app">
-							<e class="fa fa-code"></e>
-							Code
-						</a>
+							<a class="my-button" target="_blank" href="https://github.com/TashiTee/spotify-app">
+								<e class="fa fa-code"></e>
+								Code
+							</a>
+						</div>
 					</div>
 				</div>
+
+
 			</div>
 
 		</section>
@@ -396,7 +404,7 @@
 		</section>
 
 
-		<a class="anchor" id="footerr"></a>
+		<a class="anchor" id="footer"></a>
 
 		<footer id="footer">
 			<div class="footer-text">
@@ -405,27 +413,21 @@
 				</h6>
 			</div>
 
-			<div class="social-media">
+			<div class="contact">
 				<a class="button is-primary is-round is-filled is-medium" href="https://www.linkedin.com/in/tashi-tee"
 					rel="noopener" target="_blank" aria-label="LinkedIn">
 					<i class="icon" data-feather="linkedin"></i>
-					<script>
-						feather.replace()
-					</script>
+
 				</a>
 				<a class="button is-primary is-round is-filled is-medium" href="https://github.com/TashiTee" rel="noopener"
 					target="_blank" aria-label="Github">
 					<i class="icon" data-feather="github"></i>
-					<script>
-						feather.replace()
-					</script>
+
 				</a>
 				<a class="button is-primary is-round is-filled is-medium" href="mailto:tashi.tsering619@gmail.com"
 					rel="noopener" target="_blank" aria-label="Email">
 					<i class="icon" data-feather="mail"></i>
-					<script>
-						feather.replace()
-					</script>
+
 				</a>
 
 			</div>
@@ -438,6 +440,10 @@
 		</footer>
 
 		<script src="assets/scripts/app.js" charset="utf-8"></script>
+		<script type="module" src="assets/scripts/index.js"></script>
+		<script src="assets/scripts/slideshow.js"> </script>
+
+
 	</div>
 </body>
 

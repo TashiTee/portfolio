@@ -4,11 +4,25 @@
 
 body,
 html {
+
+  scroll-behavior: smooth;
+
+
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
 }
 
 .container {
-  /* display: -ms-grid;
-    display: grid; */
   height: 100%;
 }
 
@@ -20,11 +34,6 @@ h5,
 h6 {
   font-family: "Lato", sans-serif !important;
   font-weight: 900 !important;
-}
-
-.wrapper {
-  background: #4c6d86;
-  overflow: auto;
 }
 
 .img-circle {
@@ -65,6 +74,20 @@ a.anchor {
   visibility: hidden;
 }
 
+a.anchor-project {
+  display: block;
+  position: relative;
+  top: 100px;
+  visibility: hidden;
+}
+
+.mySlides {
+  display: none;
+  max-height: 300px;
+
+}
+
+
 /*** Header ***/
 
 /* Navigation styles start here  */
@@ -94,8 +117,8 @@ a.anchor {
   border-bottom: 0.5px solid rgba(41, 51, 71, 0.5);
 }
 
-.nav-ul li > *,
-.nav-headline > * {
+.nav-ul li>*,
+.nav-headline>* {
   padding: 0 20px;
 }
 
@@ -130,7 +153,7 @@ nav ul a {
   font-weight: 600;
 }
 
-.main-logo > *:not(:first-child) {
+.main-logo>*:not(:first-child) {
   margin-left: 1vh;
   /* margin-bottom: 1vh; */
   margin-top: 1.5vh;
@@ -153,11 +176,11 @@ nav ul a {
   display: none;
 }
 
-#nav-toggle:checked ~ .nav-bar {
+#nav-toggle:checked~.nav-bar {
   transform: scale(1, 1);
 }
 
-#nav-toggle:checked ~ nav a {
+#nav-toggle:checked~nav a {
   opacity: 1;
   transition: opacity 250ms ease-in-out 50ms;
 }
@@ -202,21 +225,27 @@ nav ul a {
   top: 7px;
 }
 
-/* .block-20 {
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 20px;
-  position: relative;
+.nav-link:before {
+  content: "";
   display: block;
-} */
+  height: 4px;
+  background-color: #4c6d86;
+  border-radius: 3px;
+  position: absolute;
+  top: -.75em;
+  left: 0;
+  right: 0;
+  transform: scaleX(0);
+}
+
+
 
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
 */
 @media (min-width: 1000px) {
+  
   body header,
   body main,
   body footer {
@@ -226,8 +255,7 @@ nav ul a {
   .container {
     grid-template-columns: [first-column] 5vw [line2] auto [line3] 5vw [last-column];
     grid-template-rows:
-      [first-row] 8vh [row2] minmax(92vh, auto) [row3] minmax(100vh, auto)
-      [row4] minmax(20vh, auto) [last-row];
+      [first-row] 8vh [row2] minmax(92vh, auto) [row3] minmax(100vh, auto) [row4] minmax(20vh, auto) [last-row];
   }
 
   .nav-toggle-label {
@@ -320,10 +348,6 @@ nav ul a {
     padding: 2vh 40vh;
   }
 
-  /* #skills {
-    grid-column: 1 / span 3;
-  } */
-
   .skill {
     margin: 1vh 1vh;
     width: 31.5%;
@@ -342,7 +366,7 @@ nav ul a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 300px;
+    height: 450px;
     position: relative;
     display: block;
   }
@@ -355,7 +379,6 @@ nav ul a {
     height: 370px;
     position: relative;
     display: block;
-    width: 480px;
   }
 
   .spotify-gif {
@@ -390,7 +413,7 @@ nav ul a {
 #about h2 {
   color: #646464;
   font-size: 3.8em;
-  padding-bottom: 1em;
+  /* padding-bottom: 1em; */
 }
 
 #about span {
@@ -445,6 +468,7 @@ nav ul a {
   height: 4em;
   font-weight: 100;
 }
+
 /*has 3 skill boxes */
 .contains-skills {
   display: flex;
@@ -465,7 +489,7 @@ nav ul a {
   margin: 10px 0;
 }
 
-.work-img-container svg.feather {
+.project-img-container svg.feather {
   stroke-width: 1px;
   stroke: #ff6945;
   width: 4em;
@@ -473,23 +497,22 @@ nav ul a {
   font-weight: 100;
 }
 
-/*** work ***/
-#work {
-  padding: 4em 4em 3em;
-  background-color: #fff;
+/*** project ***/
+#project {
+  padding: 2em 4em 3em;
 }
 
-#work h2 {
+#project h2 {
   color: #ff6945;
 }
 
-#work .tag-line {
+#project .tag-line {
   color: #767779;
   font-size: 1.4em;
   margin-bottom: 4em;
 }
 
-#work .work-row {
+#project .project-row {
   margin-bottom: 4em;
   margin-top: 4em;
 }
@@ -545,13 +568,44 @@ nav ul a {
     ##Screen = B/w 1025px to 1280px
   */
 
-@media (min-width: 1025px) and (max-width: 1366px) {
+/* @media (min-width: 1025px) and (max-width: 1366px) { */
+@media only screen and (min-width: 1030px) and (max-width: 1366px) {
+
+  #about .details {
+    margin-top: -6em;
+  }
+
+  #about h2 {
+    color: #646464;
+    font-size: 3.8em;
+    padding-bottom: 0;
+  }
+
+  #project {
+    padding: 1em 3em 2em;
+    background-color: #fff;
+  }
+
+  a.anchor-skill {
+    display: block;
+    position: relative;
+    top: 65px;
+    visibility: hidden;
+  }
+
+  a.anchor-project {
+    display: block;
+    position: relative;
+    top: 110px;
+    visibility: hidden;
+  }
+
   .block-20 {
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 400px;
+    height: 370px;
     position: relative;
     display: block;
   }
@@ -564,7 +618,6 @@ nav ul a {
     height: 370px;
     position: relative;
     display: block;
-    width: 480px;
   }
 
   .spotify-gif {
@@ -657,6 +710,7 @@ nav ul a {
   margin-bottom: 3vh;
   margin-top: 3vh;
 }
+
 .skill-icon {
   display: flex;
   flex-direction: row;
@@ -747,13 +801,13 @@ nav ul a {
   align-items: center;
 }
 
-.social-media {
+.contact {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-media a.button {
+.contact a.button {
   margin: 0 7.5px;
 }
 
@@ -789,4 +843,137 @@ a.button {
   text-transform: uppercase;
   border: 2px solid rgba(255, 103, 68, 0.91);
   background: white;
+}
+
+/*MOBILE */
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .nav-toggle-label {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+  nav ul li {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .icon-skill svg.feather {
+    stroke: white;
+    width: 4em;
+    height: 4em;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .skill {
+    color: #27334d;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid rgba(46, 46, 46, 0.1);
+    border-radius: 0;
+    line-height: 1.5;
+    background-color: #fff;
+  }
+
+  .contains-skills {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #project {
+    padding: 1em 1em;
+    background-color: #fff;
+  }
+
+  #project .project-row {
+    margin-bottom: 2em;
+    margin-top: 2em;
+  }
+
+  .project-button {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .small-12 {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  a.anchor-skill {
+    display: block;
+    position: relative;
+    top: 50px;
+    visibility: hidden;
+  }
+
+  a.anchor-project {
+    display: block;
+    position: relative;
+    top: 100px;
+    visibility: hidden;
+  }
+
+  .block-20 {
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 275px;
+    position: relative;
+    display: block;
+  }
+
+  .block-21 {
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 250px;
+    position: relative;
+    display: block;
+
+  }
+
+  .spotify-gif {
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 190px;
+    position: relative;
+    display: block;
+  }
+
+  .footer-text {
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 35px 0px 45px;
+  }
+
+  #about {
+    margin-top: 11em;
+    background-color: white;
+    padding-bottom: 4em;
+  }
+
+  #about h2 {
+    color: #646464;
+    font-size: 3.8em;
+    padding-bottom: 0;
+  }
+
 }
